@@ -1,0 +1,128 @@
+# Algerian Forest Fires Prediction using Machine Learning
+
+## Project Overview
+This project performs Exploratory Data Analysis (EDA), data preprocessing, feature engineering, and machine learning modeling on the Algerian Forest Fires dataset. The objective is to understand the relationship between meteorological conditions and fire weather indices and to build predictive models that can help assess forest fire risk.
+
+The project follows a structured and realistic data science workflow, focusing on data quality, interpretability, and model robustness.
+
+---
+
+## Dataset Description
+The dataset contains observations related to forest fire occurrences in two regions of Algeria:
+- Bejaia Region (Northeast Algeria)
+- Sidi Bel-Abbes Region (Northwest Algeria)
+
+The data includes meteorological variables and Fire Weather Index (FWI) components recorded during the fire season.
+
+---
+
+## Features
+
+### Meteorological Variables
+- Temperature (°C)
+- Relative Humidity (%)
+- Wind Speed (km/h)
+- Rain (mm)
+
+### Fire Weather Index Components
+- FFMC (Fine Fuel Moisture Code)
+- DMC (Duff Moisture Code)
+- DC (Drought Code)
+- ISI (Initial Spread Index)
+- BUI (Buildup Index)
+- FWI (Fire Weather Index)
+
+### Target Variable
+- Fire occurrence / fire severity indicator
+
+---
+
+## Project Structure
+├── data/
+│ └── Algerian_forest_fires.csv
+│
+├── notebooks/
+│ └── Algerian_Forest_Fires_EDA_and_Model.ipynb
+│
+├── README.md
+└── requirements.txt
+
+yaml
+Copy code
+
+---
+
+## Tools and Technologies
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+## Exploratory Data Analysis
+The EDA focuses on:
+- Understanding feature distributions using histograms
+- Identifying skewness and outliers
+- Analyzing correlations between fire weather indices
+- Comparing patterns across regions
+- Detecting data quality issues and inconsistencies
+
+Insights from EDA directly guide feature engineering and model selection.
+
+---
+
+## Data Cleaning and Feature Engineering
+Key steps include:
+- Handling missing and inconsistent values
+- Converting categorical variables into numerical form
+- Feature scaling and normalization
+- Removing redundant or highly correlated features
+
+These steps improve model stability and performance.
+
+---
+
+## Machine Learning Modeling
+The modeling workflow includes:
+- Train-test split
+- Model training
+- Model evaluation
+- Error analysis and performance comparison
+
+The focus is on generalization and avoiding data leakage.
+
+---
+
+## Model Evaluation
+The following evaluation metrics are used depending on the modeling objective:
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R-squared (R²)
+
+---
+
+## Key Observations
+- Fire Weather Index components are strongly associated with fire occurrence
+- Regional differences influence fire behavior
+- Proper preprocessing improves model convergence and reliability
+
+---
+
+## How to Run the Project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/algerian-forest-fires.git
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the notebook:
+
+bash
+Copy code
+jupyter notebook
