@@ -47,8 +47,6 @@ The data includes meteorological variables and Fire Weather Index (FWI) componen
 ├── README.md
 └── requirements.txt
 
-yaml
-Copy code
 
 ---
 
@@ -114,15 +112,10 @@ The following evaluation metrics are used depending on the modeling objective:
 ## How to Run the Project
 
 1. Clone the repository:
-```bash
 git clone https://github.com/your-username/algerian-forest-fires.git
 Install dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
 Run the notebook:
 
-bash
-Copy code
 jupyter notebook
